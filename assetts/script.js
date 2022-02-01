@@ -1,0 +1,2 @@
+var weatherApi = 'https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid=ccfd62c234470e9d19b15632c48dd5c2'
+var geoApi = 'http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit=1&appid=ccfd62c234470e9d19b15632c48dd5c2'
