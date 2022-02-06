@@ -5,3 +5,11 @@
 #search-btn {
     width: auto;
 }
+
+#forecast {
+    visibility: hidden;
+}
+
+#five-forecast {
+    visibility: hidden;
+}

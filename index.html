@@ -13,7 +13,7 @@
         <h1>Weather Dashboard</h1>
     </header>
     <div class='container-fluid'>
-        <div class='row'>
+        <div class='row' id='search-row'>
             <div class='col-sm-2 col-xs-6' id='search-col'>
                 <strong>
                 Search for a city:
@@ -24,9 +24,94 @@
                 <button type='Search' value='Search' class='btn btn-info w-100' id='search-btn'>
                     Search
                 </button>
+                <ul id='search-list'></ul>
             </div>
-            <div class='col-8 offset-2'>
-                Current Weather
+            <div class='col-8 offset-1'>
+                <div class='row' id='forecast'>
+                    <div class='col-12 card'>
+                        Current Weather
+                        <card id='current-pic'></card>
+                        <p id='temp-now'>
+                            Temp:
+                        </p>
+                        <p id='wind-now'>
+                            Wind:
+                        </p>
+                        <p id='humidity-now'>
+                            Humidity:
+                        </p>
+                        <p id='uv-index'>
+                            UV Index:
+                        </p>
+                    </div>
+                </div>
+                <div class='row' id='five-forecast'>
+                    <div class='col-2 card' id='day-one'>
+                        1-day
+                        <card id='pic-one'></card>
+                        <p id='temp-one'>
+                            Temp:
+                        </p>
+                        <p id='wind-one'>
+                            Wind:
+                        </p>
+                        <p id='humidity-one'>
+                            Humidity:
+                        </p>
+                    </div>
+                    <div class='col-2 card' id='day-two'>
+                        2-day
+                        <card id='pic-two'></card>
+                        <p id='temp-two'>
+                            Temp:
+                        </p>
+                        <p id='wind-two'>
+                            Wind:
+                        </p>
+                        <p id='humidity-two'>
+                            Humidity:
+                        </p>
+                    </div>
+                    <div class='col-2 card' id='day-three'>
+                        3-day
+                        <card id='pic-three'></card>
+                        <p id='temp-three'>
+                            Temp:
+                        </p>
+                        <p id='wind-three'>
+                            Wind:
+                        </p>
+                        <p id='humidity-three'>
+                            Humidity:
+                        </p>
+                    </div>
+                    <div class='col-2 card' id='day-four'>
+                        4-day
+                        <card id='pic-four'></card>
+                        <p id='temp-four'>
+                            Temp:
+                        </p>
+                        <p id='wind-four'>
+                            Wind:
+                        </p>
+                        <p id='humidity-four'>
+                            Humidity:
+                        </p>
+                    </div>
+                    <div class='col-2 card' id='day-five'>
+                        5-day
+                        <card id='pic-five'></card>
+                        <p id='temp-five'>
+                            Temp:
+                        </p>
+                        <p id='wind-five'>
+                            Wind:
+                        </p>
+                        <p id='humidity-five'>
+                            Humidity:
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
