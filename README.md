@@ -8,5 +8,8 @@
 
 * By fetching data from the openWeather API I was able to change the text content of certain divs of the page to fill with corresponding data points. But first I needed to fetch the latitutes and longitudes of each city the user entered by using a geolocator API. With that I could update the weather API to get the data needed.
 
+![Screenshot](./assetts/images/weather_ss.JPG)
 
+Links --> https://github.com/christierney3/Weather_App
+          https://christierney3.github.io/Weather_App/
 
