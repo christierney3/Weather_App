@@ -12,4 +12,9 @@
 
 #five-forecast {
     visibility: hidden;
+    justify-content: space-around;
+}
+
+.bg-light {
+    width: fit-content;
 }

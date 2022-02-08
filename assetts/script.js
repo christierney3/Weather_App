@@ -1,3 +1,4 @@
+// Establish variables
 var searchBtn = document.getElementById('search-btn');
 var searchInput = document.getElementById('search-input');
 var currentInfo = document.getElementById('forecast');
@@ -39,14 +40,13 @@ var ApiKey = 'ccfd62c234470e9d19b15632c48dd5c2';
 
 
 
-//Create function for saving to local storage and using location for search
+// Create function to fill URLs with necessary info
 var getCity = function() {
     var searchVal = searchInput.value;
     var geoApi = 'http://api.openweathermap.org/geo/1.0/direct?q=' + searchVal + '&limit=1&appid=' + ApiKey;
     
     
-    localStorage.setItem('location', searchVal)
-    localStorage.getItem(searchVal)
+
     // fetch the data from the city selected to get lon and lat
     fetch(geoApi)
     .then(function (response) {
@@ -114,6 +114,7 @@ var getCity = function() {
                             picThree.appendChild(imgThree);
                             picFour.appendChild(imgFour);
                             picFive.appendChild(imgFive);
+                            return;
                         })
                     }
                 })
@@ -127,7 +128,8 @@ var getCity = function() {
 
 
 
-//Create function to store and set recently searched cities
+//Create function to create buttons for recent searches.
+// Tried messing with this function for hours but when buttons were added it messed with the rest of the page as well.
 var addSearch = function() {
     searchList.innerHTML = '';
 
@@ -164,3 +166,5 @@ searchBtn.addEventListener('click', function () {
     setSearch();
     addSearch();
 });
+
+init();
